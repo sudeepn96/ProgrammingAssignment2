@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## see if the inverse has been already found. If so, it gets the
 ## inverse from the cache and skips the computation. Otherwise, it
 ## finds the inverse and sets the value of the inverse in the 
-## cache via the setmean function
+## cache via the setinv function
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
